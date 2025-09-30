@@ -1,28 +1,29 @@
-day = int(input("write day: "))
-month = int(input("write month: "))
-if (month == 1 and day >= 20) or (month == 2 and day <= 18):
+Day = int(input("Введите день: "))
+Month = int(input("Введите номер месяца (1-12): "))
+
+if (Month == 1 and Day >= 20) or (Month == 2 and Day <= 18):
     print("Водолей")
-elif (month == 2 and day >= 19) or (month == 3 and day <= 20):
+elif (Month == 2 and Day >= 19) or (Month == 3 and Day <= 20):
     print("Рыбы")
-elif (month == 3 and day >= 21) or (month == 4 and day <= 19):
+elif (Month == 3 and Day >= 21) or (Month == 4 and Day <= 19):
     print("Овен")
-elif (month == 4 and day >= 20) or (month == 5 and day <= 20):
+elif (Month == 4 and Day >= 20) or (Month == 5 and Day <= 20):
     print("Телец")
-elif (month == 5 and day >= 21) or (month == 6 and day <= 20):
+elif (Month == 5 and Day >= 21) or (Month == 6 and Day <= 20):
     print("Близнецы")
-elif (month == 6 and day >= 21) or (month == 7 and day <= 22):
+elif (Month == 6 and Day >= 21) or (Month == 7 and Day <= 22):
     print("Рак")
-elif (month == 7 and day >= 23) or (month == 8 and day <= 22):
+elif (Month == 7 and Day >= 23) or (Month == 8 and Day <= 22):
     print("Лев")
-elif (month == 8 and day >= 23) or (month == 9 and day <= 22):
+elif (Month == 8 and Day >= 23) or (Month == 9 and Day <= 22):
     print("Дева")
-elif (month == 9 and day >= 23) or (month == 10 and day <= 22):
+elif (Month == 9 and Day >= 23) or (Month == 10 and Day <= 22):
     print("Весы")
-elif (month == 10 and day >= 23) or (month == 11 and day <= 21):
+elif (Month == 10 and Day >= 23) or (Month == 11 and Day <= 21):
     print("Скорпион")
-elif (month == 11 and day >= 22) or (month == 12 and day <= 21):
+elif (Month == 11 and Day >= 22) or (Month == 12 and Day <= 21):
     print("Стрелец")
-elif (month == 12 and day >= 22) or (month == 1 and day <= 19):
+elif (Month == 12 and Day >= 22) or (Month == 1 and Day <= 19):
     print("Козерог")
 else:
-    print("Неверная дата")
+    print("Введена неверная дата")
