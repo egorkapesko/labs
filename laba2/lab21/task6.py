@@ -1,0 +1,11 @@
+user_input = input("Введите список чисел или слов (через пробел): ")
+
+input_list = user_input.split()
+
+unique_list = []
+
+for item in input_list:
+    if item not in unique_list: 
+        unique_list.append(item)  
+
+print("Список без дубликатов:", unique_list)
