@@ -1,13 +1,14 @@
 import random
 
-random_number = random.randint(1, 100)
+num = random.randint(1,100)
+print("Вам нужно отгадать число от 1 до 100\n")
 
-while True:
-    num = int(input("Ведите число: "))
-    if num > random_number:
-        print("Больше")
-    elif num < random_number:
-        print("Меньше")
+v_num = int(input("Введите ваше число от 1 до 100: "))
+while v_num != num:
+    if v_num > num:
+        print("Загаданное число меньше вашего\n")
     else:
-        print("Число разгадано")
-        break
+        print("Загаданное число больше вашего\n")
+    v_num = int(input("Введите новое число от 1 до 100: "))
+
+print("Вы отгадали число")

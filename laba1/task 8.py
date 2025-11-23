@@ -1,6 +1,21 @@
-str1 = input("Write your str: ")
-str_reverse = str1[::-1]
-if str_reverse == str1:
-    print("Is polinom")
+string = input("Введите вашу строку: ")
+length = len(string)
+
+if length % 2 == 0:
+    first_half = string[0:(length // 2)]
+    second_half = string[(length // 2):length]
+    second_half_reverse = ''.join(reversed(second_half))
+    print("Количество символов в строке четно")
+    if first_half == second_half_reverse:
+        print("Строка является палиндромом")
+    else:
+        print("Строка не является палиндромом")
 else:
-    print("Isn't polinom")
+    first_half = string[0:(length // 2)]
+    second_half = string[(length // 2 + 1):length]
+    second_half_reverse = ''.join(reversed(second_half))
+    print("Количество символов в строке нечетно")
+    if first_half == second_half_reverse:
+        print("Строка является палиндромом")
+    else:
+        print("Строка не является палиндромом")

@@ -1,5 +1,9 @@
-pressure = int(input("Pressure(Pa): "))
-volume = float(input("Volume(m^3): "))
-temperature = float(input("Temperature(K): "))
-R = 8.31
-print((pressure*volume)/(R*temperature))
+P = float(input("Введите давление газа в паскалях (Па): "))
+V = float(input("Введите объем газа в кубических метрах (m^3): "))
+T = float(input("Введите температуру газа в Кельвинах (K): "))
+
+R = 8.314
+
+N = (P * V) / (R * T)
+
+print(f"Количество вещества (в молях): {N}")

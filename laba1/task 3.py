@@ -1,7 +1,13 @@
-password = input("Write your password: ")
+password = input("Введите пароль: ")
+
 if len(password) < 16:
-    print("Password is too short")
-elif (password.isdigit() == False and password.isalpha() == True) or (password.isdigit() == True and password.isalpha() == False):
-    print("Password is weak")
+    print("Слишком короткий")
 else:
-    print("Password is strong")
+
+    if password.isalpha():  
+        print("Слабый пароль (используйте цифры)")
+
+    elif password.isdigit():
+        print("Слабый пароль (используйте буквы)")
+    else:
+        print("Надежный пароль")я

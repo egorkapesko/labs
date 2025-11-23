@@ -1,8 +1,15 @@
-a = int(input("Enter a: "))
-b = int(input("Enter b: "))
-print(a + b)
-print(a - b)
-print(a * b)
-print(a // b)
-print(a % b)
-print(a ** b)
+a = int(input("Введите a: "))
+b = int(input("Введите b: "))
+
+print("Сумма чисел a и b: ", a + b)
+print("Разность чисел a и b: ", a - b)
+print("Произведение чисел a и b: ", a * b)
+
+if b == 0:
+    print("Ошибка: деление на ноль невозможно!")
+else:
+    print("Частное чисел a и b: ", a / b)
+    print("Целая часть от деления a на b: ", a // b)
+    print("Остаток от деления a на b: ", a % b)
+
+print("Возведение числа a в степень b: ", a ** b)

@@ -1,4 +1,11 @@
-lastname = input("Write your lastname: ").capitalize()
-firstname = input("Write your firstname: ").capitalize()
-surname = input("Write your surname: ").capitalize()
-print(lastname," ", firstname[0],".", surname[0], ".", sep="")
+familiya = input("Введите фамилию: ")
+imya = input("Введите имя: ")
+otchestvo = input("Введите отчество: ")
+
+pervaya_bukva_imya = imya[0]
+
+pervaya_bukva_otchestvo = otchestvo[0]
+
+fio = familiya + " " + pervaya_bukva_imya + ". " + pervaya_bukva_otchestvo + "."
+
+print("Форматированное ФИО:", fio)
